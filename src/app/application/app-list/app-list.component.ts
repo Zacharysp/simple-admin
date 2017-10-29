@@ -7,14 +7,15 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppListComponent implements OnInit {
 
-  public applications: Array<Application>;
+  applications: Array<Application>;
 
   constructor() {
   }
 
   ngOnInit() {
     this.applications = [
-      new Application('Med', 'Medtrics', '56820f90-6c05-11e7-92a6-dbf9284aaa70', '1psBIN3wB51gnopCPkfQE8ebWna5tAOsaMpQzUK', 'Chromosome API', '2017-10-16')
+      new Application
+      ('Med', 'Medtrics', '56820f90-6c05-11e7-92a6-dbf9284aaa70', '1psBIN3wB51gnopCPkfQE8ebWna5tAOsaMpQzUK', 'Chromosome API', '2017-10-16')
     ];
   }
 
