@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-app-list',
@@ -9,7 +10,7 @@ export class AppListComponent implements OnInit {
 
   applications: Array<Application>;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -19,14 +20,18 @@ export class AppListComponent implements OnInit {
     ];
   }
 
+  toAppDetail() {
+    this.router.navigate(['/detail']);
+  }
+
 }
 
 export class Application {
   constructor(
     public appName: string,
     public companyName: string,
-    public appId: string,
-    public appSecret: string,
+    private appId: string,
+    private appSecret: string,
     public desc: string,
     public createDate: string
   ) {

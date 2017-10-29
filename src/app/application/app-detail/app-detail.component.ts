@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Application} from '../app-list/app-list.component';
 
 @Component({
   selector: 'app-app-detail',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppDetailComponent implements OnInit {
 
-  constructor() { }
+  private application: Application;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

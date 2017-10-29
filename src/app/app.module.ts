@@ -11,6 +11,7 @@ import { ContentComponent } from './content/content.component';
 import { AppListComponent } from './application/app-list/app-list.component';
 import { AppDetailComponent } from './application/app-detail/app-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { Code404Component } from './code404/code404.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ContentComponent,
     AppListComponent,
     AppDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    Code404Component
   ],
   imports: [
     BrowserModule,
