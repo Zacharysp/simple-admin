@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ContentComponent } from './content/content.component';
+import { AppListComponent } from './application/app-list/app-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContentComponent } from './content/content.component';
     MenuComponent,
     FooterComponent,
     SideBarComponent,
-    ContentComponent
+    ContentComponent,
+    AppListComponent
   ],
   imports: [
     BrowserModule

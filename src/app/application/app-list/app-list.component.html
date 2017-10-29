@@ -1,0 +1,36 @@
+<div class="box">
+  <div class="box-header with-border" style="margin-top: 10px">
+    <a class="btn btn-success btn-sm">
+      <span class="glyphicon glyphicon-plus"></span> New Application</a>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <table class="table table-bordered">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th style="width: 100px">Create Date</th>
+        <th style="width: 70px"></th>
+      </tr>
+      <tr *ngFor="let app of applications">
+        <td>{{app.appName}}</td>
+        <td>{{app.desc}}</td>
+        <td>{{app.createDate}}</td>
+        <td>
+          <a class="btn btn-primary btn-xs">Details</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- /.box-body -->
+  <div class="box-footer clearfix">
+    <ul class="pagination pagination-sm no-margin pull-right">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+</div>
+<!-- /.box -->
