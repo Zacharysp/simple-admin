@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Application, ApplicationService} from '../application.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 
 @Component({
@@ -12,7 +12,8 @@ export class AppDetailComponent implements OnInit {
 
   application: Application;
 
-  constructor(private routerInfo: ActivatedRoute, private applicationService: ApplicationService) {
+  constructor(private routerInfo: ActivatedRoute, private applicationService: ApplicationService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -21,7 +22,7 @@ export class AppDetailComponent implements OnInit {
   }
 
   modify() {
-
+    this.router.navigateByUrl('modify/' + this.application.appId);
   }
 
 }

@@ -9,8 +9,8 @@ import 'rxjs/add/operator/filter';
 })
 export class ContentComponent implements OnInit {
 
-  pageTitle: string = '';
-  pageDesc: string = '';
+  pageTitle = '';
+  pageDesc = '';
 
 
   constructor(public router: Router) {
@@ -21,6 +21,9 @@ export class ContentComponent implements OnInit {
            break;
          case '/apps':
            this.pageTitle = 'My Applications';
+           break;
+         case '/detail':
+           this.pageTitle = 'Application Detail';
            break;
        }
     });

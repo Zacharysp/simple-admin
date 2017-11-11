@@ -13,6 +13,7 @@ import {AppDetailComponent} from './application/app-detail/app-detail.component'
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {Code404Component} from './code404/code404.component';
 import {ApplicationService} from './application/application.service';
+import {AppModifyComponent } from './application/app-modify/app-modify.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {ApplicationService} from './application/application.service';
     AppListComponent,
     AppDetailComponent,
     DashboardComponent,
-    Code404Component
+    Code404Component,
+    AppModifyComponent
   ],
   imports: [
     BrowserModule,

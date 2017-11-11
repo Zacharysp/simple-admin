@@ -1,0 +1,22 @@
+<div class="box">
+  <!-- /.box-header -->
+  <!-- form start -->
+  <form>
+    <div class="box-body">
+      <div class="form-group">
+        <label for="appName">Application Name</label>
+        <input type="text" class="form-control" id="appName" placeholder="Name" value="{{application?.appName}}">
+      </div>
+      <div class="form-group">
+        <label for="appDesc">Application Description</label>
+        <textarea class="form-control" rows="5" id="appDesc" placeholder="Description">{{application?.desc}}</textarea>
+      </div>
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer">
+      <button type="submit" (click)="cancel()" class="btn btn-default">Cancel</button>
+      <button type="submit" (click)="save()" class="btn btn-primary pull-right">Save</button>
+    </div>
+    <!-- /.box-footer -->
+  </form>
+</div>
