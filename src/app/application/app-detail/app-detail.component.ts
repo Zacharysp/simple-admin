@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {Application} from '../app-list/app-list.component';
+import {Component, OnInit} from '@angular/core';
+import {Application, ApplicationService} from '../application.service';
+import {ActivatedRoute} from '@angular/router';
+
 
 @Component({
   selector: 'app-app-detail',
@@ -8,12 +10,18 @@ import {Application} from '../app-list/app-list.component';
 })
 export class AppDetailComponent implements OnInit {
 
-  private application: Application;
+  application: Application;
 
-  constructor() {
+  constructor(private routerInfo: ActivatedRoute, private applicationService: ApplicationService) {
   }
 
   ngOnInit() {
+    const appId = this.routerInfo.snapshot.params['appId'];
+    this.application = this.applicationService.getApplication(appId);
+  }
+
+  modify() {
+
   }
 
 }

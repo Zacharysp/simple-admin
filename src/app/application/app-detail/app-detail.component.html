@@ -1,9 +1,25 @@
 <div class="box">
   <div class="box-header with-border">
-    <h3>Application one</h3>
+    <a class="btn btn-primary btn" (click)="modify()">Modify</a>
   </div>
-  <div class="container">
-    <h1 class="display-3">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  <div class="lead container">
+    <div class="row">
+      <p class="col-sm-2">Application Name:</p><p class="col-sm-10">{{application.appName}}</p>
+    </div>
+    <div class="row">
+      <p class="col-sm-2">Created Date:</p><p class="col-sm-10">{{application.createDate}}</p>
+    </div>
+    <div class="row">
+      <p class="col-sm-2">Application ID:</p><p class="col-sm-10">{{application.appId}}</p>
+    </div>
+    <div class="row">
+      <p class="col-sm-2">Application Serect:</p><p class="col-sm-10">{{application.appSecret}}</p>
+    </div>
+    <div class="row">
+      <p class="col-sm-2">Company Name:</p><p class="col-sm-10">{{application.companyName}}</p>
+    </div>
+    <div class="row">
+      <p class="col-sm-2">Description:</p><p class="col-sm-10">{{application.desc}}</p>
+    </div>
   </div>
 </div>

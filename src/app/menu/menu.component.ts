@@ -16,8 +16,8 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.menusItems = [
-      new MenuItem(0, 'Dashboard', 'dashboard'),
-      new MenuItem(1, 'My Applications', 'apps'),
+      new MenuItem(0, 'Dashboard', 'fa-bar-chart', 'dashboard'),
+      new MenuItem(1, 'My Applications', 'fa-cube', 'apps'),
     ];
     this.currentItemId = 0;
   }
@@ -32,6 +32,7 @@ export class MenuItem {
   constructor(
     public id: number,
     public name: string,
+    public icon: string,
     public url: string
     ) {}
 }

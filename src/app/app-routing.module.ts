@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'apps', component: AppListComponent},
-  {path: 'detail', component: AppDetailComponent},
+  {path: 'detail/:appId', component: AppDetailComponent},
   {path: '**', component: Code404Component},
 ];
 

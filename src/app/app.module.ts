@@ -12,6 +12,7 @@ import {AppListComponent} from './application/app-list/app-list.component';
 import {AppDetailComponent} from './application/app-detail/app-detail.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {Code404Component} from './code404/code404.component';
+import {ApplicationService} from './application/application.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import {Code404Component} from './code404/code404.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ApplicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
